@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+h3 {
+  font-family: "Arial";
+  font-size: 17pt;
+  letter-spacing: 1px;
+  width: 100%;
+  background: #1fa5ff;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#container {
+  background: #999999;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container form {
+  width: 400px;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#container img {
+  margin: 15px auto;
+  text-align: center;
+  display: block;
+}
+
+#container form input {
+  width: 90%;
+  padding: 5px;
+  font-size: 16pt;
+  display: block;
+  margin: 25px auto;
+  border-radius: 5px;
+  border: 1px solid rgb(179, 179, 179);
+  text-align: center;
+}
+
+#container form input[type="submit"] {
+  background: #1fa5ff;
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.alerta {
+  font-family: "Arial";
+  font-size: 16px;
+  text-align: center;
+  color: red;
+}
+
+.header {
+  color: #fff;
+  background: #13a5e9;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.optionsBar {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  line-height: 30px;
+}
+
+.optionsBar p {
+  margin: 0 10px;
+}
+.optionsBar span {
+  margin: 0 10px;
+}
+
+/* Registro usuario */
+
+.form_register {
+  width: 450px;
+  margin: auto;
+}
+
+.form_register h1 {
+  color: #3c93bc;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  background: #ccc;
+  height: 1px;
+  margin: 10px 0;
+  display: block;
+}
+
+form {
+  background: #fff;
+  margin: auto;
+  padding: 20px 50px;
+  border: 1px solid #d1d1d1;
+}
+
+label {
+  display: block;
+  font-size: 12pt;
+  font-family: "Arial";
+  margin: 15px auto 5px auto;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  font-size: 11pt;
+  padding: 5px;
+  border: 1px solid #85929e;
+  border-radius: 5px;
+}
+
+.btn_guardar {
+  font-size: 12pt;
+  background: #12a4c6;
+  padding: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+  margin: 15px auto;
+}
+
+.alerta {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.msg_error {
+  color: red;
+}
+
+.msg_guardar {
+  color: #31c539;
+}
+
+.alerta p {
+  padding: 10px;
+}
+
+/* Lista de usuario */
+#contenedor h1 {
+  font-size: 35px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn_new {
+  background: #0270ff;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  float: right;
+
+
+}
+
+.btn_new:hover {
+  color: #fff;
+}
+
+#contenedor {
+  margin: 10px;
+}
+
+#contenedor a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 12pt;
+  font-family: "Arial";
+  width: 100%;
+}
+ 
+table th {
+  text-align: center;
+  padding: 10px;
+  background: #0270ff;
+  color: #fff;
+}
+
+table tr:nth-child(odd) {
+  background: rgb(235, 235, 235);
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.link_edit{
+  color: #0270ff;
+}
+
+.link_delete{
+  color: red;
+}
+
+.eliminaritem option:first-child{
+  display: none;  
+}
+
+/* Buscador lista de usuario */
+
+.form_buscar{
+  display: flex;
+  float: right;
+  background: initial;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.form_buscar .btn_buscar{
+background: #0270ff;
+color: white;
+padding: 0 20px;
+border: 0;
+cursor: pointer;
+margin-left: 10px;
+}
+
+#busqueda{
+  width: 200px;
+}
+
+/* elminar usuario */
+#contenedor{
+  text-align: center;
+}
+
+.eliminar h2{
+  font-size: 12pt;
+}
+
+.eliminar span{
+  font-weight: bold;
+  color: #4f72d4;
+  font-size: 12pt;
+}
+
+.btn_cancel{
+width: 124px;
+background: #0270ff;
+color: white;
+display: inline-block;
+padding: 6px;
+border-radius: 5px;
+cursor: pointer;
+margin: 15px; 
+
+}
+
+.btn_aceptar{
+  text-decoration: none;
+  width: 124px;
+  background: #0270ff;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px; 
+  
+}
+
+.btn_cancel:hover{
+  color: white;
+}
+
+#form_eliminar{
+  border: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
