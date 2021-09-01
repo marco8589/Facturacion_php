@@ -61,7 +61,7 @@ if (!empty($$_SESSION['activo'])) {
 
     <section id="container">
         <form action="" method="post">
-            <h3>Iniciar Sesion</h3>
+            <h3>Iniciar Sesion hola</h3>
             <img src="img/login.png" alt="Login" width="190px">
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="password" name="clave" placeholder="Contraseña">
