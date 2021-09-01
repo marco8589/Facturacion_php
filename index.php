@@ -9,6 +9,7 @@ if (!empty($$_SESSION['activo'])) {
     if (!empty($_POST)) {
         if (empty($_POST['usuario']) || empty($_POST['clave'])) {
             $alert = "Ingrese Usuario o Contraseña";
+            // echo $alert;
         } else {
             require_once "conexion.php";
             $user = $_POST['usuario'];
@@ -66,7 +67,7 @@ if (!empty($$_SESSION['activo'])) {
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="password" name="clave" placeholder="Contraseña">
             <div class="alerta"><?php echo isset($alert) ? $alert : '' ?></div>
-            <input type="submit" value="INGRESAR">
+            <input id="boton_ingresar" type="submit" value="INGRESAR">
         </form>
     </section>
 
