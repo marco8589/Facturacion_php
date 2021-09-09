@@ -15,9 +15,15 @@ if (!empty($$_SESSION['activo'])) {
             $user = $_POST['usuario'];
             $pass = md5($_POST['clave']);
 
-            $sql_leer = 'SELECT * FROM usuario where usuario=? and clave=?';
+            $sql_leer = 'SELECT * FROM usuarioo where usuario=? and clave=?';
             $gsent = $pdo->prepare($sql_leer);
-            $gsent->execute(array($user, $pass));
+
+            try {
+                $gsent->execute(array($user, $pass));
+            } catch (Exception $e) {
+
+                die("Error: " . $e->GetMessage() . " En la Linea " . $e->getline());
+            }
 
             $resultado = $gsent->rowCount();
 
