@@ -11,39 +11,39 @@ if (!empty($$_SESSION['activo'])) {
             $alert = "Ingrese Usuario o Contraseña";
             // echo $alert;
         } else {
-            require_once "conexion.php";
-            $user = $_POST['usuario'];
-            $pass = md5($_POST['clave']);
-
-            $sql_leer = 'SELECT * FROM usuarioo where usuario=? and clave=?';
-            $gsent = $pdo->prepare($sql_leer);
 
             try {
+                require_once "conexion.php";
+                $user = $_POST['usuario'];
+                $pass = md5($_POST['clave']);
+                $sql_leer = 'SELECT * FROM usuario where usuario=? and clave=?';
+                $gsent = $pdo->prepare($sql_leer);
                 $gsent->execute(array($user, $pass));
+
+                $resultado = $gsent->rowCount();
+
+                if ($resultado > 0) {
+
+                    $resultado = $gsent->fetchAll();
+                    foreach ($resultado as $data) {
+                        $_SESSION['activo'] = true;
+                        $_SESSION['idusuario'] = $data['idusuario'];
+                        $_SESSION['nombre'] = $data['nombre'];
+                        $_SESSION['email'] = $data['email'];
+                        $_SESSION['usuario'] = $data['usuario'];
+                        $_SESSION['rol'] = $data['idusuario'];
+                        // header('location:menu.php');
+                    }
+                } else {
+                    $alert = 'El usuario o la contraseña son incorrectos';
+                    session_destroy();
+                }
+
             } catch (Exception $e) {
 
                 die("Error: " . $e->GetMessage() . " En la Linea " . $e->getline());
             }
 
-            $resultado = $gsent->rowCount();
-
-            if ($resultado > 0) {
-
-                $resultado = $gsent->fetchAll();
-                foreach ($resultado as $data) {
-                    $_SESSION['activo'] = true;
-                    $_SESSION['idusuario'] = $data['idusuario'];
-                    $_SESSION['nombre'] = $data['nombre'];
-                    $_SESSION['email'] = $data['email'];
-                    $_SESSION['usuario'] = $data['usuario'];
-                    $_SESSION['rol'] = $data['idusuario'];
-
-                    header('location:menu.php');
-                }
-            } else {
-                $alert = 'El usuario o la contraseña son incorrectos';
-                session_destroy();
-            }
         }
     }
 }
