@@ -87,6 +87,19 @@ h3 {
 .optionsBar span {
   margin: 0 10px;
 }
+/* MENU */
+#imagen_menu {
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 280px;
+
+}
+
 
 
 /* Registro usuario */

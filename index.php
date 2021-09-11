@@ -32,7 +32,7 @@ if (!empty($$_SESSION['activo'])) {
                         $_SESSION['email'] = $data['email'];
                         $_SESSION['usuario'] = $data['usuario'];
                         $_SESSION['rol'] = $data['idusuario'];
-                        // header('location:menu.php');
+                        header('location:menu.php');
                     }
                 } else {
                     $alert = 'El usuario o la contraseña son incorrectos';
@@ -78,9 +78,6 @@ if (!empty($$_SESSION['activo'])) {
     </section>
 
 </body>
-
-</html>
-
 
 </html>
 

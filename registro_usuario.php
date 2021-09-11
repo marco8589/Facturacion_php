@@ -87,7 +87,8 @@ $resultado_t = $gsent_t->fetchAll();
                     <option value=<?php echo $dato_t['idrol'] ?>> <?php echo $dato_t['rol'] ?></option>
                     <?php endforeach?>
                 </select>
-                <input type="submit" onclick="return enviarformulario();" value="Crear Usuario" class="btn_guardar">
+                <input type="submit" onclick="return enviarformulario_usuario();" value="Crear Usuario"
+                    class="btn_guardar">
             </form>
 
         </div>

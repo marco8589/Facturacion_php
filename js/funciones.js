@@ -1,5 +1,5 @@
 
-function enviarformulario() {
+function enviarformulario_usuario() {
     var nombre = document.getElementById('nombre');
     var correo = document.getElementById('correo');
     var usuario = document.getElementById('usuario');
