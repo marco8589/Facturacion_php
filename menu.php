@@ -13,9 +13,8 @@
 <?php include "header.php"?>
 
 <body>
-
     <section id="contenedor">
-        <div id="tituto_logo">
+        <div id="titulo_logo">
             <h1> Bienvenidos al sistema</h1>
             <hr>
             <img id="imagen_menu" src="imagenes/imagen menu.jpg">

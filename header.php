@@ -24,8 +24,6 @@ $fecha_dia = date('d') . " de " . $mes[date('n')] . " de " . date('Y');
 <header>
 
     <div class="header">
-
-        <h1></h1>
         <div class="optionsBar">
             <p><?php echo $fecha_dia; ?>
             </p>

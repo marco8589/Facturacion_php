@@ -69,6 +69,28 @@ h3 {
   color: #fff;
   background: #13a5e9;
   height: 30px;
+}
+.optionsBar {
+  display: flex;
+    justify-content: right;
+    align-items: right;
+  line-height: 30px;
+}
+
+.optionsBar p {
+  margin: 0 10px;
+}
+.optionsBar span {
+  margin: 0 10px;
+}
+
+
+/* 
+
+.header {
+  color: #fff;
+  background: #13a5e9;
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: right;
@@ -87,6 +109,10 @@ h3 {
 .optionsBar span {
   margin: 0 10px;
 }
+
+
+*/
+
 /* MENU */
 #imagen_menu {
   display: block;
@@ -97,10 +123,12 @@ h3 {
   margin-top: 15px;
   margin-bottom: 10px;
   border-radius: 280px;
-
 }
 
-
+#titulo_logo {
+  width: 600px;
+  margin: auto;
+}
 
 /* Registro usuario */
 
@@ -157,6 +185,11 @@ select {
   margin: 15px auto;
 }
 
+.btn_guardar:hover{
+  background: #66bbce;
+}
+
+
 .alerta {
   width: 100%;
   margin: 10px auto;
@@ -188,8 +221,6 @@ select {
   border-radius: 5px;
   margin-top: 10px;
   float: right;
-
-
 }
 
 .btn_new:hover {
@@ -210,7 +241,7 @@ table {
   font-family: "Arial";
   width: 100%;
 }
- 
+
 table th {
   text-align: center;
   padding: 10px;
@@ -227,21 +258,21 @@ table td {
   text-align: center;
 }
 
-.link_edit{
+.link_edit {
   color: #0270ff;
 }
 
-.link_delete{
+.link_delete {
   color: red;
 }
 
-.eliminaritem option:first-child{
-  display: none;  
+.eliminaritem option:first-child {
+  display: none;
 }
 
 /* Buscador lista de usuario */
 
-.form_buscar{
+.form_buscar {
   display: flex;
   float: right;
   background: initial;
@@ -250,47 +281,46 @@ table td {
   margin: 10px 0px;
 }
 
-.form_buscar .btn_buscar{
-background: #0270ff;
-color: white;
-padding: 0 20px;
-border: 0;
-cursor: pointer;
-margin-left: 10px;
+.form_buscar .btn_buscar {
+  background: #0270ff;
+  color: white;
+  padding: 0 20px;
+  border: 0;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-#busqueda{
+#busqueda {
   width: 200px;
 }
 
 /* elminar usuario */
-#contenedor{
+#contenedor {
   text-align: center;
 }
 
-.eliminar h2{
+.eliminar h2 {
   font-size: 12pt;
 }
 
-.eliminar span{
+.eliminar span {
   font-weight: bold;
   color: #4f72d4;
   font-size: 12pt;
 }
 
-.btn_cancel{
-width: 124px;
-background: #0270ff;
-color: white;
-display: inline-block;
-padding: 6px;
-border-radius: 5px;
-cursor: pointer;
-margin: 15px; 
-
+.btn_cancel {
+  width: 124px;
+  background: #0270ff;
+  color: white;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px;
 }
 
-.btn_aceptar{
+.btn_aceptar {
   text-decoration: none;
   width: 124px;
   background: #0270ff;
@@ -299,48 +329,13 @@ margin: 15px;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 15px; 
-  
+  margin: 15px;
 }
 
-.btn_cancel:hover{
+.btn_cancel:hover {
   color: white;
 }
 
-#form_eliminar{
+#form_eliminar {
   border: 0;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
